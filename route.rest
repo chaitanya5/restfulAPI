@@ -1,0 +1,28 @@
+GET http://localhost:8000/subscribers
+
+###
+GET http://localhost:8000/subscribers/5db9ee929a262313acba12fb
+
+###
+POST  http://localhost:8000/subscribers/add
+Content-Type: application/json
+
+{
+    "name":"Sirisha",
+    "subscribedToChannel":"Maa TV"
+}
+
+###
+PATCH   http://localhost:8000/subscribers/update/5db9fb49370b2019340073fe
+Content-Type: application/json
+
+{
+    "subscribedToChannel":"Gemini TV"
+}
+
+
+###
+DELETE http://localhost:8000/subscribers/5db9f3660e26cf03d448e5f4
+
+
+
